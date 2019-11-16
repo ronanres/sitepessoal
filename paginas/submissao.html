@@ -1,32 +1,53 @@
 <html>
-<head>
-<link rel="stylesheet" href="css.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<title>II SEMGED</title>
-
-<meta charset="UTF-8">
-</head>
+    <head>
+        <title>II SEMGED</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </head>
 <body>
-  <div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper green">
-        <a href="#!" class="brand-logo"><img src="../imagens/logo.png"></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="programacao.html">Programação</a></li>
-          <li><a href="gts.html">Grupos de Trabalho</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="inscricao.html">Inscrição como ouvinte</a></li>
-          <li  class="active"><a href="submissao.html">Submissão de trabalhos</a></li>
-        </ul>
-      </div>
+        <div class="nav-wrapper green">
+            <a href="#" class="brand-logo"><img src="../imagens/logo.png"></a>
+            <a href="#" data-activates="menu-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="gts.html">Grupos de Trabalho</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="inscricao.html">Inscrição como ouvinte</a></li>
+                <li class="active"><a href="submissao.html">Submissão de trabalhos</a></li>
+            </ul>
+            <ul class="side-nav" id="menu-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="gts.html">Grupos de Trabalho</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="inscricao.html">Inscrição como ouvinte</a></li>
+                <li><a href="submissao.html">Submissão de trabalhos</a></li>
+            </ul>
+        </div>
     </nav>
-  </div>
+
 
 
       <h3 style="color:red" align="center"> A submissão de trabalhos se encerrou.</h3>
 
 <br>
+<h4>Downloads</h4>
+<div align="center"><b>
+   <a href="https://drive.google.com/file/d/1rnzLbE6XSFyLGuQhYj4eHylhKZzP1sfc/view?usp=sharing">MODELO DE ARTIGO COMPLETO
+    </a> | 
+    <a href="https://drive.google.com/file/d/107Nj7Q7zcCz2nCMtX-Gr6BufA_4qrSPT/view?usp=sharing">MODELO DE RESUMO EXPANDIDO
+    </a> | 
+    <a href="https://drive.google.com/file/d/1-s9p7K4Si2mNR7K3olR0CIceMbSBUIke/view?usp=sharing">MODELO DE BANNER
+    </a>
+  </b></div>
+  <br>
 <h4>Normas para submissão dos trabalhos</h4>
 <p>– Máximo 6 (seis) autores
 <br>- Poderão ser submetidos trabalhos em duas categorias:
@@ -91,14 +112,13 @@
 
         <br><br>
 
-    <h4>Downloads</h4>
-<div align="center"><b>
-   <a href="https://drive.google.com/file/d/1rnzLbE6XSFyLGuQhYj4eHylhKZzP1sfc/view?usp=sharing">MODELO DE ARTIGO COMPLETO
-    </a> | 
-    <a href="https://drive.google.com/file/d/107Nj7Q7zcCz2nCMtX-Gr6BufA_4qrSPT/view?usp=sharing">MODELO DE RESUMO EXPANDIDO
-    </a> | 
-    <a href="https://drive.google.com/file/d/1-s9p7K4Si2mNR7K3olR0CIceMbSBUIke/view?usp=sharing">MODELO DE BANNER
-    </a>
-  </b></div>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script>
+  $(function(){
+      $(".button-collapse").sideNav();
+  });
+  </script>
 </body>
 </html>
